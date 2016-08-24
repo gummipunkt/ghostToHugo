@@ -53,6 +53,8 @@ type Post struct {
 	ID int `json:"id"`
 	// title: {type: 'string', maxlength: 150, nullable: false}
 	Title string `json:"title"`
+	// name: {type: 'string', maxlength: 150, nullable: false, unique: true}
+	Name string `json:"name"`
 	// slug: {type: 'string', maxlength: 150, nullable: false, unique: true}
 	Slug string `json:"slug"`
 	// markdown: {type: 'text', maxlength: 16777215, fieldtype: 'medium', nullable: true}
